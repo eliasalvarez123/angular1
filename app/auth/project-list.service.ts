@@ -12,7 +12,7 @@ constructor(private _http: Http) {
 }
 
 getAll() : Observable <Array<Project>> {
-const url = 'htpp://localhost:8085/projects';
+const url = 'http://localhost:8085/projects';
 const headers = new Headers({'Content-Type':'application/json'});
 const options = new RequestOptions({
     headers:headers
